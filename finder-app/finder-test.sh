@@ -2,6 +2,8 @@
 # Tester script for assignment 1 and assignment 2
 # Author: Siddhant Jajoo
 
+set -x
+set -v
 set -e
 set -u
 
@@ -45,6 +47,7 @@ then
 	then
 		echo "$WRITEDIR created"
 	else
+	   echo "error myth"
 		exit 1
 	fi
 fi
